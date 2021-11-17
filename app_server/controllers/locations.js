@@ -3,9 +3,9 @@ const request = require('request');
 const apiOptions = { 
 server : 'http://localhost:3000' 
 }; 
-/*if (process.env.NODE_ENV === 'production') { 
-apiOptions.server = 'https://pure-temple-67771.herokuapp.com'; 
-}*/
+if (process.env.NODE_ENV === 'production') { 
+apiOptions.server = 'https://loc8r-chris.herokuapp.com/'; 
+}
 
 /* GET 'home' page */
 const _renderHomepage = function(req, res, responseBody){ 
